@@ -7,7 +7,7 @@ The inspiration came from the [Redux.js.org](http://redux.js.org/docs/basics/Exa
 
 ## What is the base for this project?
 
-I used the non-ejected version of the [create-react-app boilerplate](https://github.com/facebookincubator/create-react-app) with the [redux package](https://github.com/reactjs/redux) and [react-redux package](https://github.com/reactjs/react-redux) installed.
+I used the non-ejected version of the [create-react-app boilerplate](https://github.com/facebookincubator/create-react-app) with the [redux package](https://github.com/reactjs/redux), [react-redux package](https://github.com/reactjs/react-redux) and [foundation sites])https://www.npmjs.com/package/foundation-sites) packages installed.
 
 ## How do I use this?
 1. Clone or fork this repo.
