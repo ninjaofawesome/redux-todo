@@ -3,9 +3,6 @@ import Footer from '../footer/footer';
 import AddTodo from '../../containers/add_todo/add_todo';
 import VisibleTodoList from '../../containers/visibleTodoList/visibleTodoList';
 
-
-import './App.css';
-
 class App extends Component {
   render() {
     return (
