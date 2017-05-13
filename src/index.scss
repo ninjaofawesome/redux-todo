@@ -1,2 +1,17 @@
+//the whole mamajamma of foundation
+@import '../node_modules/foundation-sites/scss/foundation';
+
+//base
+@import '../src/styles/base/variables';
+@import '../src/styles/base/mixins';
+@import '../src/styles/base/type';
+@import '../src/styles/base/images';
+@import '../src/styles/base/buttons';
+
 //components
 @import '../src/components/app/app';
+@import '../src/components/footer/footer';
+@import '../src/components/link/link';
+@import '../src/components/todo/todo';
+@import '../src/components/todo_list/todo_list';
+@import '../src/containers/add_todo/add_todo';
