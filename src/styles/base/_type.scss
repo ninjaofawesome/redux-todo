@@ -1,0 +1,17 @@
+a {
+  @include link-transition(500ms);
+
+  color: $gray;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $charcoal;
+  }
+
+  &:visted {
+    color: $gray;
+  }
+}
