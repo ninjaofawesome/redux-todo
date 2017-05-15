@@ -10,3 +10,15 @@
     position: relative;
   }
 }
+
+@include breakpoint(medium down) {
+
+  .todo-list {
+
+    &__container {
+      @include flex-grid-column(12);
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

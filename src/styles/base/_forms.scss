@@ -38,3 +38,13 @@
     }
   }
 }
+
+@include breakpoint(medium down) {
+
+  .todo-list {
+
+    &__form {
+      width: 90%;
+    }
+  }
+}
