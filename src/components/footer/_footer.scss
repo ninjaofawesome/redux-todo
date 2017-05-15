@@ -1,0 +1,21 @@
+.todo-list {
+  &__footer {
+    border-top: rem-calc(3) solid $black;
+    text-align: center;
+    height: rem-calc(75);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &__linked-list-label,
+  &__linked-list {
+    display: inline-block;
+  }
+
+  &__linked-item {
+    list-style-type: none;
+    display: inline;
+    margin: 0 rem-calc(5);
+  }
+}

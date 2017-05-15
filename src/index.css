@@ -30,24 +30,91 @@ a {
   a:visted {
     color: #666; }
 
-.App {
-  text-align: center; }
+.todo-list__form {
+  width: 75%;
+  display: block;
+  margin: 0 auto; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+.todo-list__form-input {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: calc(18px * 1.25);
+  font-weight: 400;
+  width: calc(100% - 82px);
+  height: 2.5rem;
+  border: 0.0625rem solid #ccc; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+.todo-list__form-submit {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  width: 75px;
+  height: 2.8125rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #333;
+  font-size: 14px;
+  letter-spacing: -0.03125rem;
+  font-weight: 700;
+  position: absolute;
+  top: 0; }
+  .todo-list__form-submit:active, .todo-list__form-submit:focus, .todo-list__form-submit:hover {
+    color: #fff;
+    background-color: #666; }
 
-.App-intro {
-  font-size: large; }
+.todo-list {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%; }
+  .todo-list__container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 50%;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    position: relative; }
+    @media print, screen and (min-width: 40em) {
+      .todo-list__container {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.todo-list__footer {
+  border-top: 0.1875rem solid #000;
+  text-align: center;
+  height: 4.6875rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.todo-list__linked-list-label, .todo-list__linked-list {
+  display: inline-block; }
+
+.todo-list__linked-item {
+  list-style-type: none;
+  display: inline;
+  margin: 0 0.3125rem; }
+
+.todo-list__todo-list {
+  text-align: center;
+  list-style-type: none; }
+
+.todo-list__item {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: calc(20px * 1.25);
+  font-weight: 400; }
+  .todo-list__item--completed {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: calc(20px * 1.25);
+    font-weight: 400;
+    text-decoration: line-through; }

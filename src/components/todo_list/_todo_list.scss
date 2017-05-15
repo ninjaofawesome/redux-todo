@@ -1,0 +1,15 @@
+.todo-list {
+
+  &__todo-list {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  &__item {
+    @include BodyFont(20px);
+
+    &--completed {
+      @include StrikeThrough(20px);
+    }
+  }
+}

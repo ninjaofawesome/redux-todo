@@ -15,3 +15,18 @@ a {
     color: $gray;
   }
 }
+
+@mixin BodyFont($size) {
+  font-family: $sans-serif;
+  font-size: $size;
+  line-height: calc(#{$size} * 1.25);
+  font-weight: 400;
+}
+
+@mixin StrikeThrough($size) {
+  font-family: $sans-serif;
+  font-size: $size;
+  line-height: calc(#{$size} * 1.25);
+  font-weight: 400;
+  text-decoration: line-through;
+}

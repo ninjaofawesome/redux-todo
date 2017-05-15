@@ -6,7 +6,7 @@ let AddTodo = ({ dispatch }) => {
   let input;
 
   return (
-    <div>
+    <div className="todo-list__form">
       <form onSubmit={e => {
         e.preventDefault();
         if (!input.value.trim()) {
@@ -15,10 +15,10 @@ let AddTodo = ({ dispatch }) => {
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        <input ref={node => {
+        <input className="todo-list__form-input" ref={node => {
           input = node
         }} />
-        <button type="submit">
+        <button className="todo-list__form-submit" type="submit">
           Add Todo
         </button>
       </form>

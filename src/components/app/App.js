@@ -6,10 +6,12 @@ import VisibleTodoList from '../../containers/visibleTodoList/visibleTodoList';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
+      <div className="todo-list">
+        <div className="todo-list__container">
+          <AddTodo />
+          <VisibleTodoList />
+          <Footer />
+        </div>
       </div>
     );
   }
